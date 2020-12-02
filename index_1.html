@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="estilos/miEstilo2.css">
+</head>
+<body>
+
+    <p>Hola soy una etiqueta "p" común y corriente!</p>
+    <p class="chevere">Yo soy parte de todas las "p" pero tengo clase!</p>
+    <p id="identidad">Yo soy parte de "p" pero no tengo clase, sino identidad! </p>
+
+    <div class="chevere">Yo soy un div, pero tengo la clase de "p"!</div>
+    <div>Yo no pertenezo a "p", ni tengo identidad, soy un div común y corriente</div>
+
+   <!------------------------------------------------------------------------------------------->
+   <div class="imagen">
+
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+    <p>La imagen de fondo no se desplaza. Intenta desplazarte por la página.</p>
+
+   </div>
+
+   <div class="borde">
+       Estoy con un borde!
+   </div>
+
+   <div class="margen">Este "div" tienen 25px al margen desde arriba de su ultimo div, 50 a los lados y abajo 75px</div>
+
+
+   <div class="padre">
+       <p>soy papá!</p>
+       <div class="hijo">
+        <p>soy hijo! he heredado margen de margen de mi padre, ahora estoy a 100 pixeles de él </p>
+       </div>
+   </div>
+
+   <div>
+       <p>Te explico! ¡Mira el código!</p>
+       <img class="colpasado" src="Teoria/9_MargenColapsado.png" alt="colapsado">
+       <!--En ese ejemplo, tenemos h1 y h2, el h1 tiene un margen hacia abajo de 50px
+        el h2 tiene un margen hacia arriba de 70 px
+        juntos forman 70px de margen entre ellos, pero no, lo que pasa es que como que esos margenes se fusionan
+        es decir, los 20 de arriba se integran con los 50 del margen de h1, y como resultado se colpasan!! y queda un margen entre ellos
+        de 50 px, no de 70....Esto solo pasa con los margenes de arriba con los de abajo-->
+   </div>
+
+   <div class="paddings">
+       este div tiene un padding de 25px arriba, 50 a la derecha, 75 abajo y hacia la izquierda 100px!
+   </div>
+
+
+   <div class="with_Vs_padding">
+       <p>Width vs padding: supongamos que definimos un div con width: 300px
+           luego un padding: 25px...Ese widh ganará los pixeles del padding, que son
+           25 pixeles por el lado izquierdo, y 25 por el derecho
+           Y pasaría lo mismo con height y los valores de padding top y bot, se le suman
+           por tanto el tamanio será:
+
+       </p>
+
+       <p class="ejemplo_1">Esto tiene 300px</p>
+       <p class="ejemplo_2">Esto también tiene 300px, pero se le suman los 25px de cada padding (izquierdo y derecho)</p>
+       <p class="ejemplo_3">Este se mantiene en 300px a pesar de tener el espacio de los padding, eso se debe a la propiedad box-sizing!!</p>
+
+   </div>
+
+   <div>
+       <p class="widhtAndHeight">Esto tiene el 50% de whidth(largo)</p>
+       <textarea class="widhtAndHeight_2">Esto tiene el 500px de whidth(largo y no puede tener más)</textarea>
+
+   </div>
+
+   <p>Listo!, la proxima semana comenzamos desde out-line!</p>
+
+
+
+</body>
+</html>

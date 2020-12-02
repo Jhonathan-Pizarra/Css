@@ -1,0 +1,126 @@
+/*
+¿Qué es el CSS?
+CSS significa C ascading S tyle S heets
+CSS describe cómo se deben mostrar los elementos HTML en la pantalla, papel o en otros medios
+CSS ahorra mucho trabajo . Puede controlar el diseño de varias páginas web a la vez
+Las hojas de estilo externas se almacenan en archivos CSS
+*/
+
+/*
+CSS resolvió un gran problema!
+¡HTML nunca tuvo la intención de contener etiquetas para formatear una página web!
+HTML fue creado para describir el contenido de una página web, como:
+<h1> Este es un encabezado </h1>
+<p> Este es un párrafo. </p>
+Cuando se agregaron etiquetas como <font> y atributos de color a la especificación HTML 3.2, comenzó una pesadilla para los desarrolladores web. 
+El desarrollo de sitios web grandes, donde se agregaron fuentes e información de color a cada página, se convirtió en un proceso largo y costoso.
+Para resolver este problema, el Consorcio World Wide Web (W3C) creó CSS.
+¡CSS eliminó el formato de estilo de la página HTML!
+*/
+
+/*
+Selectores CSS
+Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.
+
+Podemos dividir los selectores CSS en cinco categorías:
+
+Selectores simples (seleccione elementos basados ​​en nombre, id, clase)
+Selectores de combinador (seleccione elementos basados ​​en una relación específica entre ellos)
+Selectores de pseudo-clase (seleccione elementos basados ​​en un cierto estado)
+Selectores de pseudoelementos (seleccionar y diseñar una parte de un elemento)
+Selectores de atributos (seleccione elementos basados ​​en un atributo o valor de atributo)
+*/
+
+/*
+Tres formas de insertar CSS
+Hay tres formas de insertar una hoja de estilo:
+
+CSS externo
+CSS interno (Es el que se define al principo del html, en el mismo html)
+CSS en línea
+
+
+CSS en linea:
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+este css es el que viene como atributo style dentro de una etiqueta html, 
+logicamente funciona igual, pero puede ser tedioso manejar ahí mismo y además
+tu pagina se demorará más en cargar poque debe buscar por separado para cada elemento que aplicaste estilo
+por lo tanto, lo que usaremos de ahora ne adelante será:
+
+CSS externo:
+¡Con una hoja de estilo externa, puede cambiar el aspecto de un sitio web completo cambiando solo un archivo!
+Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del elemento <link>, dentro de la sección de encabezado
+*/
+
+body{
+    background-color: black;
+   
+}
+
+
+p{
+    color: lightseagreen;
+    margin-left: 20px;
+    /*Nota: No agregues un espacio entre el valor de la propiedad y la unidad (ejemplo: margin-left: 20 px;). La forma correcta es:margin-left: 20px;*/
+}
+
+
+
+/*
+Orden Cascada
+digamos que aplicamos un CSS externo, luego uno interno, luego uno en line
+la jerarquía hará: aplico el externo, luego aplico el interno, y por último el on line, convirtiendo este ultimo el prioritario!
+
+Otro caso muy común es que aplicamos un estilo externo a una etiqueta "p" y luego más abajo le damos estilo a otra etiqueta
+que contiene también una "P", en este caso no importa el orden en que se haya dado estilo a la etiqueta "P", va a conservar siempre ese estilo
+a menos que en el CSS externo definamos otra etiqueta "p" con otros atributos
+
+Y, bueno, en resto de contendio de "opacity" por ejemplo, tendrá que aplicarsele el estilo que se le dió a su id y todo lo que esté dentro de esas etiquetas
+(en ese caso h3) de opacity tendrán el estilo aplicado de Opacity, a menos que tengan etiquetas dentro que contengan un estilo definido, 
+y si tienen una etiqueta y esa no tiene estilo puesse le aplica el de opacity por default.
+
+*/
+
+/*
+Por último decir que, digamos que en un externo aplico estilos 1era vez a h2 con un color
+2da vez al mismo h2 pero con otro colo
+el color que predominará por defecto a ese h2 será el seguno!
+*/
+
+/*
+Colores pueden leerse por: nombre, rgb, número hexadecima*/
+
+h2 {
+    color: rgb(210, 111, 123); /*iterno con valores numericos sobre saturacion roja , verde y azul para formar nuevos colores! REcuerda, valores varían entre 0 -255*/
+}
+
+/*Referencia a un ID
+nos permite aplicar estilos a uno y solo un elemento específico
+*/
+#opacidad{
+    color: red;
+    opacity: 60%;
+
+    /*Nota: Al usar la opacitypropiedad para agregar transparencia al fondo de un elemento, todos sus elementos secundarios heredan la misma transparencia. Esto puede hacer que el texto dentro de un elemento totalmente transparente sea difícil de leer.*/
+    /*La opacidad puede variar entre: 100%, 60%, 30% Y 10%*/
+}
+
+
+/*Imagen de fondo;*/
+#imagenFondo {
+    background-image: url('../images/tokyo.jpg'); /*Los ../ me regresan al directorio anterior*/
+    background-repeat: repeat-x; /*Mi fondo se repite en todo el documento/SI SE REPITE verticalmente entonces sería -y , no -x, ojo/*/
+
+}
+
+#buho{
+    background-image: url('../images/buho.gif');
+    background-repeat: no-repeat; /*Evita que la imagen se repita!*/
+    background-position: left; /*Posiciona a la izquierda*/
+    background-attachment: scroll; /*El buho se queda quieto en donde le dejo!*/
+    /*Pero si uso attachment: fixed, el buho se mueve conforme me muevo*/
+
+}

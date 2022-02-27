@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo13.css">
+</head>
+<body>
+  <h2>Pseudo clases</h2>
+  <p>Una pseudoclase se usa para definir un estado especial de un elemento. </p>
+  <p>Por ejemplo, se puede utilizar para:</p>
+  <ul>
+    <li>Aplicar estilo a un elemento cuando un usuario pasa el mouse sobre él</li>
+    <li>Estilo de enlaces visitados y no visitados de manera diferente</li>
+    <li>Aplicar estilo a un elemento cuando se enfoca </li>
+  </ul>
+
+  <h2> Aplicar estilo a un enlace según el estado </h2> 
+  <p><b><a href="https://www.intarcesoft.com.ve/es/activadores/licencias-eset-smart-security-y-nod32-antivirus-9-septiembre-2016-actualizado.html" target="_blank">This is a link</a></b></p>
+  <p><b>Note:</b> a: hover DEBE ir después de a:link y a:visited en la definición de CSS para que sea efectivo .</p>
+  <p><b>Note:</b> a:active DEBE venir despues de a:hover en la definición CSS para que sea efectivo.</p>
+  <p>Los nombres de pseudoclase no distinguen entre mayúsculas y minúsculas. </p>
+
+  <h2>Pseudo-classes and HTML Classes</h2>
+  <p>Las pseudoclases se pueden combinar con clases HTML: <br>
+    Cuando pasa el cursor sobre el enlace en el ejemplo, cambiará de color: 
+  </p>
+  <p><a class="highlight" href="https://www.youtube.com/watch?v=pP2lrIYAbjI">La misma canción</a></p>
+  <p><a href="https://www.youtube.com/watch?v=pP2lrIYAbjI">Una canción</a></p>
+
+  <div class="c1">Mouse Over Me</div>
+
+  <h2>Simple Tooltip Hover</h2>
+  <p>Desplácese sobre un elemento "div" para mostrar un elemento "p" </p>
+  <div class="c2">Coloca el mouse en este elemento "div" para ver el elemento "p"
+    <p class="c2">Tada! Here I am!</p>
+  </div>
+
+  <h2>CSS - The :first-child Pseudo-class</h2>
+  <p>La pseudoclase: first-child coincide con un elemento especificado que es el primer hijo de otro elemento. </p>
+  <p>En el siguiente ejemplo, el selector coincide con cualquier elemento "p" que sea el primer hijo de cualquier elemento: </p>
+
+  <p class="c3">This is some text.</p>
+  <p class="c3">This is some text.</p>
+
+  <div>
+    <p class="c3">This is some text.</p>
+    <p class="c3">This is some text.</p>
+  </div>
+
+  <p>En el siguiente ejemplo, el selector coincide con el primer elemento "i" en todos los elementos "p":  </p>
+  <p class="c4">I am a <i class="c4">strong</i> person. I am a <i class="c4">strong</i> person.</p>
+  <p class="c4">I am a <i class="c4">strong</i> person. I am a <i class="c4">strong</i> person.</p>
+
+  <h2>CSS - The :lang Pseudo-class</h2>
+  <p>La pseudoclase: lang le permite definir reglas especiales para diferentes idiomas <br> 
+    En el siguiente ejemplo,: lang define las comillas para los elementos "q" con lang = "no": 
+  </p>
+  <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+  <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+  <p>PUEDES VER MÁS SOBRE PSEUDO CLASES <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">aqui</a></p>
+
+  <h2>CSS Pseudo-elements</h2>
+  <p>Un pseudoelemento CSS se utiliza para diseñar partes específicas de un elemento. </p>
+  <p>Por ejemplo, se puede utilizar para:</p>
+  <ul>
+    <li>Aplicar estilo a la primera letra o línea de un elemento</li>
+    <li>Insertar contenido antes o después del contenido de un elemento </li>
+  </ul>
+  
+  <h2>The ::first-line Pseudo-element</h2>
+  <p>El pseudoelemento :: first-line se usa para agregar un estilo especial a la primera línea de un texto. </p>
+  <p class="c5">Puede usar el pseudoelemento :: first-line para agregar un efecto especial a la primera línea de un texto. Un poco más de texto. Y aún más, y más, y más, y más, y más, y más, y más, y más, y más, y más, y más, y más. </p> 
+  <p>Trata de redimensionar la pantalla :)</p>
+  <p>El pseudoelemento :: first-line solo se puede aplicar a elementos a nivel de bloque.</p>
+  <p>Las siguientes propiedades se aplican al pseudoelemento :: first-line:</p>
+  <ul>
+    <li>font properties</li>
+    <li>color properties</li>
+    <li>background properties</li>
+    <li>word-spacing</li>
+    <li>letter-spacing</li>
+    <li>text-decoration</li>
+    <li>vertical-align</li>
+    <li>text-transform</li>
+    <li>line-height</li>
+    <li>clear</li>
+  </ul>
+
+  <p><b>Nota:</b>Observe la notación de dos puntos :: first-line versus: first-line </p>
+  <p>
+    La sintaxis de dos puntos se utilizó tanto para pseudoclases como para pseudoelementos en CSS2 y CSS1 <br>
+    Pero en CSS3 se utiliza ":" para las clases y "::" para los elementos  
+  </p>
+   
+
+  <h2>The ::first-letter Pseudo-element</h2>
+  <p>
+    El pseudoelemento :: first-letter se utiliza para añadir un estilo especial a la primera letra de un texto.  
+    El siguiente ejemplo formatea la primera letra del texto en todos los elementos "p": 
+  </p>
+  <p class="c6"> ¡Puede usar el pseudoelemento :: first-letter para agregar un efecto especial al primer carácter de un texto! </p> 
+  <p>El pseudoelemento :: first-letter solo se puede aplicar a elementos a nivel de bloque.</p>
+  <p>Las siguientes propiedades se aplican al pseudoelemento :: first-letter:</p>
+  <ul>
+    <li>font properties</li>
+    <li>color properties</li>
+    <li>background properties</li>
+    <li>margin properties</li>
+    <li>padding properties</li>
+    <li>border properties</li>
+    <li>text-decoration</li>
+    <li>vertical-align (only if "float" is "none")</li>
+    <li>text-transform</li>
+    <li>line-height</li>
+    <li>float</li>
+    <li>clear</li>
+  </ul>
+
+
+  <h2>Multiple Pseudo-elements</h2>
+  <p>
+    También se pueden combinar varios pseudoelementos. <br>
+    En el siguiente ejemplo, la primera letra de un párrafo será roja, con un tamaño de fuente xx grande. El resto de la primera línea será azul y en minúsculas. El resto del párrafo tendrá el tamaño y color de fuente predeterminados: 
+  </p>
+  <p class="c7"> ¡Puede combinar los pseudoelementos :: primera letra y :: primera línea para agregar un efecto especial a la primera letra y la primera línea de un texto! </p> 
+
+
+  <h2>CSS - The ::before Pseudo-element</h2>
+  <p>
+    El pseudoelemento :: before se puede utilizar para insertar algún contenido antes del contenido de un elemento.
+    El siguiente ejemplo inserta una imagen antes del contenido de cada elemento "h1":       
+  </p>
+  <h3 class="c8">This is a heading</h3>
+
+  <h2>CSS - The ::after Pseudo-element</h2>
+  <p>
+    El pseudoelemento :: after puede usarse para insertar algún contenido después del contenido de un elemento.
+    El siguiente ejemplo inserta una imagen después del contenido de cada elemento "h1": 
+  </p>
+  <h3 class="c9">This is a heading</h3>
+
+  <h2>CSS - The ::marker Pseudo-element</h2>
+  <p>
+    El pseudoelemento :: marker selecciona las viñetas de los elementos de la lista.
+    El siguiente ejemplo aplica estilo a los marcadores de los elementos de la lista: 
+  </p>
+
+  <ul class="c10">
+    <li class="c10">Coffee</li>
+    <li class="c10">Tea</li>
+    <li class="c10">Milk</li>
+  </ul>
+  
+  <ol class="c10">
+    <li class="c10">First</li>
+    <li class="c10">Second</li>
+    <li class="c10">Third</li>
+  </ol>
+
+  <h2>CSS - The ::selection Pseudo-element</h2>
+
+  <p>El pseudoelemento :: selection coincide con la parte de un elemento que selecciona un usuario.</p>
+  <p>Las siguientes propiedades CSS se pueden aplicar a :: selección: color, fondo, cursor y contorno. </p>
+  <p>Sombrea uno de los sigueitnes textos:</p>
+  <p class="c11">This is a paragraph.</p>
+  <div class="c11">This is some text in a div element.</div>
+
+  <p>Puedes ver más sobre estos Pseudo elementos y Pseudoclases en <a href="https://www.w3schools.com/css/css_pseudo_elements.asp">referencias</a></p>
+
+
+
+
+
+  
+</body>
+</html>

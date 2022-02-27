@@ -1,0 +1,181 @@
+/*Tablas*/
+table, th, td {
+  border: 1px solid black;
+}
+
+table.completa {
+  width: 100%;
+}
+
+table.borde1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.borde2 {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+/*Altura y Anchura*/
+table.ex1, td.ex1, th.ex1 {
+  border: 1px solid black;
+}
+
+table.ex2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.ex1 {
+  height: 70px;
+}
+
+/*Taabla a la mitad*/
+table.ex3, td.ex3, th.ex3 {
+  border: 1px solid black;
+}
+
+table.ex4 {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th.ex4 {
+  height: 70px;
+}
+
+/*Alineacion*/
+table.alineacion, td.alineacion, th.alineacion {
+  border: 1px solid black;
+}
+
+table.alineacion {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td.alineacion {
+  text-align: center;
+}
+
+/*Alineacion 2*/
+table.alineacion2, td.alineacion2, th.alineacion2 {
+  border: 1px solid black;
+}
+
+table.alineacion2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.alineacion2 {
+  text-align: left;
+}
+
+/*Alineacion 3*/
+table.alineacion3, td.alineacion3, th.alineacion3 {
+  border: 1px solid black;
+}
+
+table.alineacion3 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td.alineacion3 {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+/*Espaciado*/
+table.espaciado, td.espaciado, th.espaciado {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.espaciado {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.espaciado, td.espaciado {
+  padding: 15px;
+}
+
+/*Divisores*/
+table.divisores {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.divisores, td.divisores {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/*Efectps*/
+table.efectos {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.efectos, td.efectos {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.efectos:hover {background-color: yellow;}
+
+
+table.cebra {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.cebra, td.cebra {
+  text-align: left;
+  padding: 8px;
+}
+
+tr.cebra:nth-child(even) {background-color: #f2f2f2;}
+
+table.cebra2 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.cebra2, td.cebra2 {
+  text-align: left;
+  padding: 8px;
+}
+
+tr.cebra2:nth-child(even){background-color: #f2f2f2}
+
+th.cebra2 {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*Rsponsive*/
+table.responsive {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.responsive, td.responsive {
+  text-align: left;
+  padding: 8px;
+}
+
+tr.responsive:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+/*Caption*/
+caption {
+  caption-side: bottom;
+}

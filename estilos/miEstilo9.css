@@ -1,0 +1,157 @@
+/*Width & Max-Width*/
+
+div.ex1 {
+  width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+div.ex2 {
+  max-width: 500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+/*Posición*/
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+div.relative2 {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+img.z {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1; /*Si lo pones en 1 la imagen se colocará frente al texto*/
+}
+
+/*Posición de texto frente a la imagen*/
+/*Izquuerda-arriba*/
+.container {
+  position: relative;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+img.izquierda { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/*Derecha-arriba*/
+.container {
+  position: relative;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+img.derecha { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/*Izquierda abajo*/
+.container {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+img.izquierda-bajo { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/*Derecha abajo*/
+.container {
+  position: relative;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+img.derecha-bajo { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/*Centred*/
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+img.centred { 
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}

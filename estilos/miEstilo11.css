@@ -1,0 +1,147 @@
+span.a {
+  display: inline; /* default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+/*Horizontal Navigation Links*/
+.nav {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/*Horizontal & Vertical Align*/
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.center2 {
+  text-align: center;
+  border: 3px solid green;
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Posicion absoluta*/
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.rightFloat {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+/*Clearfix trick*/
+div.trick {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.imgA {
+  float: right;
+}
+
+.imgB {
+  float: right;
+}
+
+.clearfix2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Alinear con padding*/
+.centerA {
+  padding: 70px 0;
+  border: 3px solid green;
+}
+
+.centerB {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.centerC {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+/** Si el texto tiene multiples lienas sería mejor usar este **/
+.centerD p.myStyle {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*Porpiedad transform para alineación*/
+.centerE { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.centerE p.myStyle2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*Alineación con Flexbox*/
+.centerF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}

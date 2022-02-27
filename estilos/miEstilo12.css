@@ -1,0 +1,19 @@
+/*Selectores*/
+div p {
+  background-color: yellow;
+}
+
+/*Child Selector (>)*/
+div.c1 > p.c1 {
+  background-color: green;
+}
+
+/*Selector inmediatamente Adyacente*/
+div.c2 + p.c2 {
+  background-color: blue;
+}
+
+/*Selector sibling*/
+div.c3 ~ p.c3 {
+  background-color: red;
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo7.css">
+</head>
+<body>
+
+  <h2>Tablas</h2>
+  <p>CSS mejor mucho el aspecto de las tablas HTML, por ejemplo</p>
+  <h3>Bordes</h3>
+  <p>Para especificar bordes de tabla en CSS, utilice la propiedad. "border"</p>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+  
+  <table class="completa">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+
+<p>la tabla de los ejemplos anteriores tiene bordes dobles. Esto se debe a que tanto la tabla como los "th" y "td" tienen fronteras separadas. <br>
+  Ahora vamos a quitarlas: La propiedad "border-collapse" establece si los bordes de la tabla deben contraerse en un solo borde
+</p>
+
+<table class="borde1">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<p>Si solo desea un borde alrededor de la tabla, especifique únicamente la propiedad de "border"</p>
+<table class="borde2">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>Alto & Ancho</h2>
+<p>Colocamos el ancho de la tabla y la altura del encabezado de la tabla</p>
+<table class="ex1 ex2">
+  <tr>
+    <th class="ex1">Firstname</th>
+    <th class="ex1">Lastname</th>
+    <th class="ex1">Savings</th>
+  </tr>
+  <tr>
+    <td class="ex1">Peter</td>
+    <td class="ex1">Griffin</td>
+    <td class="ex1">$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+
+<p>Para crear una tabla que solo debe abarcar la mitad de la página, utilice :width: 50%</p>
+
+<table class="ex3 ex4">
+  <tr>
+    <th class="ex3 ex4">Firstname</th>
+    <th class="ex3">Lastname</th>
+    <th class="ex3">Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<h2>Alineamiento</h2>
+<p>La propiedad establece la alineación horizontal (como izquierda, derecha o centro) del contenido en "th" o "td". <br>
+  De forma predeterminada, el contenido de <th>elements está alineado al centro y el contenido de "td" está alineado a la izquierda.
+</p>
+
+<table class="alineacion">
+  <tr>
+    <th class="alineacion">Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td class="alineacion">Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<p>Alinear a la izquierda es lo mismo, text-align:left</p>
+
+<table class="alineacion2">
+  <tr>
+    <th class="alineacion2">Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td class="alineacion2">Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<p>La propiedad "vertical-align" establece la alineación vertical (como la parte superior, inferior o media) del contenido en "th" o "td". <br>
+  De forma predeterminada, la alineación vertical del contenido de una tabla es al la izquierda (tanto para "th" como para "td" elementos).
+</p>
+
+<table class="alineacion3">
+  <tr>
+    <th class="alineacion3">Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td class="alineacion3">Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<h2>Espaciado</h2>
+<p>Para controlar el espacio entre el borde y el contenido de una tabla, utilice la propiedad "padding" en "td" y "th" </p>
+<table class="espaciado">
+  <tr>
+    <th class="espaciado">Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td class="espaciado">Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<h2>Divisores</h2>
+<table class="divisores">
+  <tr>
+    <th class="divisores">Firstname</th>
+    <th class="divisores">Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td class="divisores">Peter</td>
+    <td class="divisores">Griffin</td>
+    <td class="divisores">$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<h2>Efectos</h2>
+<p>Utilice el selector :hover de "tr" para resaltar las filas de la tabla con el ratón sobre el.</p>
+<table class="efectos">
+  <tr class="efectos">
+    <th class="efectos">First Name</th>
+    <th class="efectos">Last Name</th>
+    <th class="efectos">Points</th>
+  </tr>
+  <tr class="efectos">
+    <td class="efectos">Peter</td>
+    <td class="efectos">Griffin</td>
+    <td class="efectos">$100</td>
+  </tr>
+  <tr class="efectos">
+    <td class="efectos">Lois</td>
+    <td class="efectos">Griffin</td>
+    <td class="efectos">$150</td>
+  </tr>
+  <tr class="efectos">
+    <td class="efectos">Joe</td>
+    <td class="efectos">Swanson</td>
+    <td class="efectos"> $300</td>
+  </tr>
+  <tr class="efectos">
+    <td class="efectos">Cleveland</td>
+    <td class="efectos">Brown</td>
+    <td class="efectos">$250</td>
+  </tr>
+</table>
+
+<p>Para las tablas con rayas de cebra, use el selector :nth-child()background-color y agregue una a todas las filas de tabla pares (o impares)</p>
+
+  <table class="cebra">
+    <tr class="cebra">
+      <th class="cebra">First Name</th>
+      <th class="cebra">Last Name</th>
+      <th class="cebra">Points</th>
+    </tr>
+    <tr class="cebra">
+      <td class="cebra">Peter</td>
+      <td class="cebra">Griffin</td>
+      <td class="cebra">$100</td>
+    </tr>
+    <tr class="cebra">
+      <td class="cebra">Lois</td>
+      <td class="cebra">Griffin</td>
+      <td class="cebra">$150</td>
+    </tr>
+    <tr class="cebra">
+      <td class="cebra">Joe</td>
+      <td class="cebra">Swanson</td>
+      <td class="cebra">$300</td>
+    </tr>
+    <tr class="cebra">
+      <td class="cebra">Cleveland</td>
+      <td class="cebra">Brown</td>
+      <td class="cebra">$250</td>
+    </tr>
+  </table>
+
+  <p>Podemos dar colores a los textos y a las filas</p>
+
+  <table class="cebra2">
+    <tr class="cebra2">
+      <th class="cebra2">First Name</th>
+      <th class="cebra2">Last Name</th>
+      <th class="cebra2">Points</th>
+    </tr>
+    <tr class="cebra2">
+      <td class="cebra2">Peter</td>
+      <td class="cebra2">Griffin</td>
+      <td class="cebra2">$100</td>
+    </tr>
+    <tr class="cebra2">
+      <td class="cebra2">Lois</td>
+      <td class="cebra2">Griffin</td>
+      <td class="cebra2">$150</td>
+    </tr>
+    <tr class="cebra2">
+      <td class="cebra2">Joe</td>
+      <td class="cebra2">Swanson</td>
+      <td class="cebra2">$300</td>
+    </tr>
+    <tr class="cebra2">
+      <td class="cebra2">Cleveland</td>
+      <td class="cebra2">Brown</td>
+      <td class="cebra2">$250</td>
+    </tr>
+  </table>
+
+  <h2>Tabla responsive</h2>
+  <p>Una tabla responsive muestra una barra de desplazamiento horizontal en lo que se disminuye su pantalla <br>
+    Para crear una tabla responsive, añade un contendor (como div) con el atriburo "overflow-x:auto"
+  </p>
+
+  <div style="overflow-x:auto;">
+    <table class="responsive">
+      <tr class="responsive">
+        <th class="responsive">First Name</th>
+        <th class="responsive">Last Name</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+        <th class="responsive">Points</th>
+      </tr>
+      <tr class="responsive">
+        <td class="responsive">Jill</td>
+        <td class="responsive">Smith</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+        <td class="responsive">50</td>
+      </tr>
+      <tr class="responsive">
+        <td class="responsive">Eve</td>
+        <td class="responsive">Jackson</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+        <td class="responsive">94</td>
+      </tr>
+      <tr class="responsive">
+        <td class="responsive">Adam</td>
+        <td class="responsive">Johnson</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+        <td class="responsive">67</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Caption</h2>
+  <p>Esto nos sirve para describir la tabla <br></p>
+  <table>
+    <caption>Table 1.1 Customers</caption>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr class="alt">
+        <td>Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+        <td>Sweden</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr class="alt">
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+    </table>
+
+    <p>Puedes ver más variedades de tablas en <a href="https://www.w3schools.com/css/css_table_responsive.asp">Otras tablas</a></p>
+
+</body>
+</html>

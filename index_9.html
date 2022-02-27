@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo9.css">
+</head>
+<body>
+
+  <h1>CSS Layout - width and max-width</h1>
+  <h2>width, max-width & margin: auto;</h2>
+  <p>Un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y la derecha hasta donde puede).</p>
+  <p>Establecer el ancho de un elemento a nivel de bloque evitará que se extienda hasta los bordes de su contenedor. </p>
+  <p>Luego, puede establecer los márgenes en automático, para centrar horizontalmente el elemento dentro de su contenedor.  <br> El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los dos márgenes: </p>
+  <p>El problema con esto ocurre cuando la ventana del navegador es más pequeña que el ancho del elemento. El navegador agrega una barra de desplazamiento horizontal a la página. </p>
+  <p>La solución, es usar 4l uso de max-width, en esta situación, mejorará el manejo del navegador de ventanas pequeñas. Esto es importante al hacer que un sitio se pueda utilizar en dispositivos pequeños </p>
+  <p>A continuación se ilustran estos conceptos:</p>
+  <img src="Teoria/15_Width&Height.PNG" alt="Layout" height="500px">
+
+  <h2>Ejemplo</h2>
+  <div class="ex1">This div element has width: 500px;</div>
+  <br>
+  
+  <div class="ex2">This div element has max-width: 500px;</div>
+  <p><strong>Tip:</strong>Redimensiona la pantalla del navegador hasta 500px para ver la diferencia</p>
+
+  <h1>The position Property</h1>
+  <p>La propiedad "position" especifica el tipo de método de posicionamiento utilizado para un elemento (estático, relativo, fijo, absoluto o pegajoso).</p>
+  <p>Hay cinco valores de posición diferentes: </p>
+  <ul>
+    <li>static</li>
+    <li>relative</li>
+    <li>fixed</li>
+    <li>absolute</li>
+    <li>sticky</li>
+  </ul>
+
+  <p>Los elementos se colocan utilizando las propiedades top, bottom, left y right. Sin embargo, estas propiedades no funcionarán a menos que se establezca primero la propiedad de posición. <br> 
+     También funcionan de forma diferente según el valor de la posición. 
+  </p>
+  
+
+  <h2>position: static;</h2>
+  <p>Los elementos HTML se colocan estáticos de forma predeterminada. 
+    Los elementos de posición estática no se ven afectados por las propiedades top, bottom, left y right.
+  </p>
+  <div class="static">
+    This div element has position: static;
+  </div>
+  <p> Un elemento con posición: estática; no se coloca de ninguna manera especial; está siempre posicionado de acuerdo con el flujo normal de la página: </p> 
+
+
+
+  <h2>position: relative;</h2>
+  <p>Un elemento con posición: relativa; está posicionado en relación con su posición normal.
+    Establecer las propiedades top, bottom, left y right de un elemento en una posición relativa hará que se ajuste lejos de su posición normal. El resto del contenido no se ajustará para encajar en ningún espacio dejado por el elemento. 
+  </p>
+  <div class="relative">
+    This div element has position: relative;
+  </div>
+  <p> Un elemento con posición: relativa; está posicionado en relación con su posición normal</p> 
+
+  <h2>position: fixed;</h2>
+  <p>Un elemento con posición:fixed; se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar incluso si se desplaza la página. Las propiedades top, bottom, left y right. Se utilizan para colocar el elemento.</p>
+  <div class="fixed">
+    This div element has position: fixed;
+  </div>
+  <p> Un elemento con posición: fijo; está posicionado en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar incluso si se desplaza por la página: </p> 
+
+
+  <h2>position: absolute;</h2>
+  <p>Un elemento con posición: absoluta; se posiciona en relación con el antepasado posicionado más cercano (en lugar de posicionado en relación con la ventana gráfica, como fijo).</p>
+  <p>Sin embargo; si un elemento de posición absoluta no tiene antepasados de posición, utiliza el cuerpo del documento y se mueve junto con el desplazamiento de la página.</p>
+  <p>Los elementos de posición absoluta se eliminan del flujo normal y pueden superponerse a elementos. </p>
+  <div class="relative2">This div element has position: relative;
+    <div class="absolute">This div element has position: absolute;</div>
+  </div>
+  <p>Un elemento con posición: absoluta; está posicionado en relación con el antepasado posicionado más cercano (en lugar de posicionado en relación con la ventana gráfica, como fijo) </p>
+
+
+  <h2>position: sticky;</h2>
+  <p>Un elemento con posición: pegajoso; se posiciona según la posición de desplazamiento del usuario. </p>
+  <p>Un elemento adhesivo alterna entre relativo y fijo, según la posición de desplazamiento. Se coloca en una posición relativa hasta que se alcanza una posición de desplazamiento determinada en la ventana gráfica, luego se "pega" en su lugar (como la posición: fija). </p>
+  <p>Internet Explorer no admite el posicionamiento fijo. Safari requiere un prefijo -webkit- (lo veremos a continuación). También debe especificar al menos una de las opciones superior, derecha, inferior o izquierda para que funcione la posición adhesiva. </p>
+  <div class="sticky">I am sticky!</div>
+
+  <div style="padding-bottom:2000px">
+    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+    <p>Scroll back up to remove the stickyness.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+
+  <h2>Elementos superpuestos</h2>
+  <p>Cuando los elementos se colocan, pueden superponerse a otros elementos. La propiedad z-index especifica el orden de pila de un elemento (qué elemento debe colocarse delante o detrás de los demás).</p>
+  <p>Un elemento puede tener un orden de pila positivo o negativo: </p>
+
+  <h2>This is a heading</h2>
+  <img class="z" src="images/buho.gif" width="100" height="140">
+
+  <p>Debido a que la imagen tiene un índice Z de -1, se colocará detrás del texto. </p>
+  <p>Un elemento con un orden de pila mayor siempre está delante de un elemento con un orden de pila menor. </p>
+  <p>Si dos elementos se superponen sin un índice z especificado, el elemento colocado en último lugar en el código HTML se mostrará en la parte superior. </p>
+
+    
+  <h2>Posicionar texto en una imagen</h2>
+  <div class="container">
+    <img class="izquierda" src="images/Code_0.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="topleft">Top Left</div>
+  </div>
+  <div class="container">
+    <img class="derecha" src="images/Code_0.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="topright">Top Right</div>
+  </div>
+  <div class="container">
+    <img class="izquierda-bajo" src="images/Code_0.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="bottomleft">Bottom Left</div>
+  </div>
+  
+  <div class="container">
+    <img class="derecha-bajo" src="images/Code_0.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="bottomright">Bottom Right</div>
+  </div>
+
+  <div class="container">
+    <img class="centred" src="images/Code_0.jpg" alt="Cinque Terre" width="1000" height="300">
+    <div class="center">Centered</div>
+  </div>
+  
+  <p>Puedes ver el efecto de cortado en <a href="https://www.w3schools.com/cssref/pr_pos_clip.asp">clip_eff</a></p>
+
+  
+
+</body>
+</html>

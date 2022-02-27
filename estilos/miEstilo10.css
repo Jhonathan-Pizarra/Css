@@ -1,0 +1,191 @@
+/*Desbordamiento (Overfolow)*/
+#overflowTest {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+#overflowVisible  {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: visible;
+}
+
+#overflowHidden {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: hidden;
+}
+
+#overflowScroll {
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  border: 1px dotted black;
+  overflow: scroll;
+}
+
+#overflowAuto {
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: auto;
+}
+
+/*Porpeidad Float*/
+.recuadro {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: left;
+}
+
+.img3 {
+  float: none;
+}
+
+.base {
+  float: left;
+  padding: 15px; 
+}
+
+.cuadro1 {
+  background: yellow;
+}
+
+.cuadro2 {
+  background: blue;
+}
+
+.cuadro3 {
+  background: red;
+}
+
+/*Clear & ClearFixed*/
+.div1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 10px;  
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+/*Clearfiz*/
+.divClearFix {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.imgClearFix {
+  float: right;
+}
+
+.imgClearFix2 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after { /*After lo veremos despues en pseudo elementos*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Grid Boxes*/
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+/*
+¿Qué es el tamaño de la caja?
+Puede crear fácilmente tres cajas flotantes una al lado de la otra. 
+Sin embargo, cuando agrega algo que amplía el ancho de cada cuadro (por ejemplo, relleno o bordes), el cuadro se romperá. 
+La propiedad de tamaño de caja nos permite incluir el relleno y el borde en el ancho (y alto) total de la caja, asegurándonos de que el relleno permanezca dentro de la caja y que no se rompa. 
+*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Cajas separadas*/
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box; /*Intenta eliminar esto para que veas el efecto*/
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Cajas de igual altura*/
+.boxb {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  height: 300px;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Contenedores flexibles*/
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container .boxc {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}

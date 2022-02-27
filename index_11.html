@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS Externo-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo11.css">
+</head>
+<body>
+
+  <h2>Layout - display: inline-block</h2>
+  <p>
+    En comparación con display: inline, la principal diferencia es que display: inline-block permite establecer un ancho y alto en el elemento. <br>
+    Además, con display: inline-block, se respetan los márgenes / rellenos superior e inferior, pero con display: inline. <br>
+    En comparación con display: block, la principal diferencia es que display: inline-block no agrega un salto de línea después del elemento, por lo que el elemento puede sentarse junto a otros elementos. <br>
+    El siguiente ejemplo muestra los diferentes comportamientos de la pantalla: inline, display: inline-block y display: block: 
+  </p>
+
+  <h3>display: inline</h3>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+  <h3>display: inline-block</h3>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+  <h3>display: block</h3>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+  <h2>Uso de bloques en línea para crear vínculos de navegación </h2>
+  <p>Un uso común de la visualización: inline-block es mostrar los elementos de la lista horizontalmente en lugar de verticalmente. El siguiente ejemplo crea enlaces de navegación horizontales: </p>
+  <ul class="nav">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#clients">Our Clients</a></li>  
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <p> De forma predeterminada, los elementos de la lista se muestran verticalmente. En este ejemplo usamos display: inline-block para mostrarlos horizontalmente (uno al lado del otro). </p>
+  <p> Nota: si cambia el tamaño de la ventana del navegador, los enlaces se romperán automáticamente cuando se llene demasiado. </p> 
+
+
+  <h2>Horizontal & Vertical Align</h2>
+  <h3>Center Align Elements</h3>
+  <p>
+    Para centrar horizontalmente un elemento de bloque (como "div"), use margin: auto;
+    Establecer el ancho del elemento evitará que se estire hasta los bordes de su contenedor.
+    A continuación, el elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los dos márgenes: 
+  </p>
+  <div class="center">
+    <p>Hello World!</p>
+  </div>
+  <p>
+    <b>Nota:</b>La alineación central no tiene ningún efecto si no se establece la propiedad de ancho (o se establece en 100%). 
+  </p>
+ 
+  <h3>Center Align Text</h3>
+  <p>Para centrar el texto (o lo que haya) dentro de un elemento, use text-align: center; </p>
+  <div class="center2">
+    <p>This text is centered.</p>
+  </div>
+
+  <h3>Center an Image</h3>
+  <p>Para centrar una imagen, establezca el margen izquierdo y derecho en automático y conviértalo en un elemento de bloque: </p>
+  <img class="img1" src="./images/cc_leluch.jpg" alt="Paris" style="width:40%">
+
+  <h3>Left and Right Align - Using position</h3>
+  <p>Un método para alinear elementos es usar la posición: absoluta; </p>
+  <div class="right">
+    <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+  </div>
+
+  <h3>Left and Right Align - Using float</h3>
+  <p>Otro método para alinear elementos es usar la propiedad float: </p>
+  <div class="rightFloat">
+    <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+  </div>
+
+  <h3>The clearfix Hack</h3>
+  <p>Como puedes ver, si un elemento es más alto que el elemento que lo contiene y está flotando, se desbordará fuera de su contenedor. Puede utilizar el "truco clearfix" para solucionar este problema: </p>
+  <p> Esta imagen flota a la derecha. También es más alto que el elemento que lo contiene, por lo que se desborda fuera de su contenedor: </p> 
+  <div class="trick">
+    <img class="imgA" src="./images/img_5terre.jpg" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  
+  <h2 style="clear:right">With New Modern Clearfix</h2>
+  <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+  
+  <div class="clearfix2 trick">
+    <img class="imgB" src="./images/img_5terre.jpg" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+
+  <h3>Center Vertically - Using padding</h3>
+  <p> En este ejemplo, usamos la propiedad padding para centrar el elemento div verticalmente: </p> 
+  <div class="centerA">
+    <p>I am vertically centered.</p>
+  </div>
+  <p>Para centrar tanto vertical como horizontalmente, use padding y text-align: center: </p>
+  <div class="centerB">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+  <p>Otro truco es usar la propiedad line-height con un valor que sea igual a la propiedad height: </p>
+  <div class="centerC">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+
+  <h3>Center Vertically - Using position & transform</h3>
+  <p>Si padding y line-height no son opciones, otra solución es usar el posicionamiento y la propiedad transform: </p>
+  <div class="centerE">
+    <p class="myStyle2">I am vertically and horizontally centered.</p>
+  </div>
+  
+  <h3>Center Vertically - Using Flexbox</h3>
+  <p>También puede usar flexbox para centrar las cosas. Solo tenga en cuenta que flexbox no es compatible con IE10 y versiones anteriores: </p>
+  <div class="centerF">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+
+  
+
+</body>
+</html>

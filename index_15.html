@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="./estilos/miEstilo15.css">
+</head>
+<body>
+
+  <h2>CSS Navigation Bar</h2>
+  <p>Pueden ser horizontales o verticales</p>
+  <h3>Navigation Bars</h3>
+
+  <p>
+    Tener una navegación fácil de usar es importante para cualquier sitio web. <br>
+    Con CSS puedes transformar aburridos menús HTML en atractivas barras de navegación. 
+  </p>
+
+  <h3>Navigation Bar = List of Links</h3>
+  <p>
+    Una barra de navegación necesita HTML estándar como base. <br>
+    En nuestros ejemplos, crearemos la barra de navegación a partir de una lista HTML estándar. <br>
+    Una barra de navegación es básicamente una lista de enlaces, por lo que usar los elementos "ul" y "li" tiene mucho sentido: 
+  </p>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <p> Nota: utilizamos href = "#" para los enlaces de prueba. En un sitio web real, estas serían las URL. </p> 
+
+  <p> En este siguiente ejemplo, eliminamos las viñetas de la lista y su margen y relleno predeterminados. </p> 
+  <ul class="c1">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <h2>CSS Vertical Navigation Bar</h2>
+  <p>Para crear una barra de navegación vertical, puede diseñar los elementos "a" dentro de la lista, además del código de la página anterior: </p>
+  <ul class="c2">
+    <li class="c3"><a class="c3" href="#home">Home</a></li>
+    <li class="c3"><a class="c3" href="#news">News</a></li>
+    <li class="c3"><a class="c3" href="#contact">Contact</a></li>
+    <li class="c3"><a class="c3" href="#about">About</a></li>
+  </ul>
+  
+  <p>Crearemos una barra de navegación vertical básica con un color de fondo gris y cambiamos el color de fondo de los enlaces cuando el usuario mueva el mouse sobre ellos: </p>
+  <ul class="c4">
+    <li class="c4"><a class="c4" href="#home">Home</a></li>
+    <li class="c4"><a class="c4" href="#news">News</a></li>
+    <li class="c4"><a class="c4" href="#contact">Contact</a></li>
+    <li class="c4"><a class="c4" href="#about">About</a></li>
+  </ul>
+
+  <h2>Active/Current Navigation Link</h2>
+  <p>Agrega una clase "activa" al enlace actual para que el usuario sepa en qué página se encuentra: </p>
+  <ul class="c5">
+    <li class="c5"><a class="active c5" href="#home">Home</a></li>
+    <li class="c5"><a class="c5" href="#news">News</a></li>
+    <li class="c5"><a class="c5" href="#contact">Contact</a></li>
+    <li class="c5"><a class="c5" href="#about">About</a></li>
+  </ul>
+
+  <h2>Center Links & Add Borders</h2>
+  <p>Agrega text-align: center a <li> o <a> para centrar los enlaces. </p>
+  <p>También, hemos agregado algunos botdes para este ejemplo:</p>
+  <ul class="c6">
+    <li class="c6"><a class="c7 c6" href="#home">Home</a></li>
+    <li class="c6"><a class="c6" href="#news">News</a></li>
+    <li class="c6"><a class="c6" href="#contact">Contact</a></li>
+    <li class="c6"><a class="c6" href="#about">About</a></li>
+  </ul>
+
+  <h2>Full-height Fixed Vertical Navbar</h2>
+
+  <ul class="c8">
+    <li class="c8"><a class="c8 c9" href="#home">Home</a></li>
+    <li class="c8"><a class="c8" href="#news">News</a></li>
+    <li class="c8"><a class="c8" href="#contact">Contact</a></li>
+    <li class="c8"><a class="c8" href="#about">About</a></li>
+  </ul>
+  
+  
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+    <h2>Fixed Full-height Side Nav</h2>
+    <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+    <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+    <p>Some text..</p>
+  </div>
+  
+
+  <h2>CSS Horizontal Navigation Bar</h2>
+  <h3>Horizontal Navigation Bar</h3>  
+  <p>Hay dos formas de crear una barra de navegación horizontal. Usar elementos de lista flotante o en línea. </p>
+  <h3>Inline List Items</h3>
+  <p>Una forma de crear una barra de navegación horizontal es especificar los elementos "li" como en línea, además del código "estándar": </p>
+
+  <ul class="c10">
+    <li class="c11"><a href="#home">Home</a></li>
+    <li class="c11"><a href="#news">News</a></li>
+    <li class="c11"><a href="#contact">Contact</a></li>
+    <li class="c11"><a href="#about">About</a></li>
+  </ul>
+
+  <h2>Floating List Items</h2>
+  <p>Otra forma de crear una barra de navegación horizontal es hacer flotar los elementos "li" y especificar un diseño para los enlaces de navegación: </p>
+  <ul class="c11">
+    <li class="c11"><a class="c11" href="#home">Home</a></li>
+    <li class="c11"><a class="c11" href="#news">News</a></li>
+    <li class="c11"><a class="c11" href="#contact">Contact</a></li>
+    <li class="c11"><a class="c11" href="#about">About</a></li>
+  </ul>
+  <p> <b> Nota: </b> Si no se especifica un! DOCTYPE, los elementos flotantes pueden producir resultados inesperados. </p>
+  <p> Se agrega un color de fondo a los enlaces para mostrar el área del enlace. Se puede hacer clic en toda el área del enlace, no solo en el texto. </p>
+  <p> <b> Nota: </b> overflow: hidden se agrega al elemento ul para evitar que los elementos li salgan de la lista. </p> 
+    
+
+</body>
+</html>

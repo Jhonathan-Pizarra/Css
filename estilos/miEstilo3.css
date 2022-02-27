@@ -1,171 +1,55 @@
-p{ /*Estilo aplicado a todas las etiquetas "p"*/
-    color: hotpink;
-}
-
-.chevere{ /*Estilo aplicado a todas las etiqeutas con clase centro*/
-    text-align: right;
-    color: mediumblue;
-}
-
-#identidad{ /*Estilo a las etiquetas pero con una clase*/
-
+/*CONTORNOS: https://www.w3schools.com/css/css_outline.asp */
+.contorno {
+    border: 2px solid black;
+    outline: #4CAF50 solid 10px;
+    margin: auto;  
+    padding: 20px;
     text-align: center;
-    color: greenyellow;
-}
+  }
 
+  p {outline-color:red;}
 
-div.chevere{ /*Hará estilos para todos los div de clase "chevere0, y solo a los divs, no a los p, no a los table que tengan esta misma clase"*/
-    width: 30px;
-    height: 30px;
-}
+  p.dotted {outline-style: dotted;}
+  p.dashed {outline-style: dashed;}
+  p.solid {outline-style: solid;}
+  p.double {outline-style: double;}
+  p.groove {outline-style: groove;}
+  p.ridge {outline-style: ridge;}
+  p.inset {outline-style: inset;}
+  p.outset {outline-style: outset;}
 
-div{
-    text-transform: uppercase;
-}
-
-/*Esto afectará a todas las etiquetas que no tengan ni clase, ni "id", ni estilo aplicado*/
-*{
-    color: black;
-}
-
-/*----------------------------------------------------------------*/
-
-div.imagen{ /*hará estilos para todos los div de clase imagen, y solamente divs, no p, no spam, no nada*/
-
-    background: black;
-    background-image: url("../images/buho.gif");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-attachment: fixed;
-
-}
-
-div.borde{
-    border-style: solid; 
-    border-color: mediumspringgreen;
-    /*tambien hay:
-    dotted: punteado
-    dashed: rayado
-    double: borde con 2 lineas
-    groove: borde suave
-    ridge: borde suave depende del color
-    insert: borde como de botón apalstado
-    outset: borde como de botón por apalstar*/
-    border-width: 8px; 
-    /*Tambien puede ser:
-    border-width: 2px; medida en pixeles
-    border-width: medium, thin; medida en aspecto
-    border-width: 25px 10px 4px 35px es decir: 25px arriba 10px derecha 4px abajo y 35px izquierda
-    border-width: 2opx 5px, es decir: 20 hacia arriba y hacia abajo y 5 a los lados
-    */
-
-    border-right-style: dashed; /*aplica estilo propio a el borde derecho*/
-    border-radius: 10px;
-    border-bottom-width: 3px;
-
-    /*Es todo, lo demás son combinaciones, te dejo una imagen en el material de estudip*/
-
-}
-
-div.margen{
+  p.ex1 {
     border: 1px solid black;
-    margin: 25px 50px 50px 75px; /*Esto va asi: 25 arriba, 50 (de derecha a izqueirda), 50 abajo, 75 (de izquierda a derecha)*/
-    /*también puedo definirlos por separado:
-    margin-top: 25px
-    margin-bottom: 100px
-    margin-right: 150px
-    margin-left: 80px
-
-    o simplemente margin: 25px afecatará a todos los bordes por igual
-    */
-}
-
-/*Estos están dentro del mismo div*/
-.padre{
-    border: 1px solid blue;
-    margin-left: 100px;
-}
-
-.hijo{
-    margin-left: inherit;
-}
-
-
-.colpasado{
-    width: 75%;
-    height: 75%;
-    align-content: center;
-}
-
-div.paddings{
-
-    background-color: lightblue;
+    outline-style: solid;
+    outline-color: lightseagreen;
+    outline-width: thin;
+  }
+  
+  p.ex2 {
     border: 1px solid black;
-    padding: 25px 50px 75px 100px; /*Funciona igual quie con el margin:
-    
-    padding solamente, para afectar a todos por igual
-    padding-botton
-    padding-left:
-    padding-right:
-    padding-top
-    padding: 25px 50px por ejemplo, haria que top y bot tengan 25px, y que izquierda y derecha tegan 50px*/
-}
+    outline-style: solid;
+    outline-color: lightseagreen;
+    outline-width: medium;
+  }
+  
+  p.ex3 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: lightseagreen;
+    outline-width: thick;
+  }
+  
+  p.ex4 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: lightseagreen;
+    outline-width: 4px;
+  }
 
-p.ejemplo_1{
-    width: 300px;
-    background-color: yellow;
-
-}
-
-p.ejemplo_2{
-    width: 300px;
-    background-color: lightgreen;
-    padding: 25px;
-
-}
-
-p.ejemplo_3{
-    width: 300px;
-    padding: 25px;
-    background-color: lightblue;
-    box-sizing: border-box; /*Esto mantendrá a todo dentro delos límites del widht
-    content hará que se ajuste al totoal, o sea el que incluye al padding
-    */
-}
-
-.widhtAndHeight{
-
-    width: 50%;
-    height: 200px;
-    background-color: powderblue;
-    /*
-    auto- Esto es por defecto. El navegador calcula la altura y el ancho.
-    length - Define la altura / anchura en px, cm, etc.
-    % - Define la altura / anchura en porcentaje del bloque contenedor
-    initial - Establece el alto / ancho a su valor predeterminado
-    inherit - La altura / anchura se heredará de su valor principal
-    */
-
-}
-
-.widhtAndHeight_2{
-
-    max-width: 500px;
-    height: 100px;
-    background-color: powderblue;
-    /*
-    widht y height pueden definirse tambien por:
-    auto- Esto es por defecto. El navegador calcula la altura y el ancho.
-    length - Define la altura / anchura en px, cm, etc.
-    % - Define la altura / anchura en porcentaje del bloque contenedor
-    initial - Establece el alto / ancho a su valor predeterminado
-    inherit - La altura / anchura se heredará de su padre
-    */
-
-}
-
-/*
-Recuerda que las propiedades height y width no incluyen relleno, 
-bordes o márgenes! ¡Establecen la altura / anchura del área dentro del relleno,
-el borde y el margen del elemento
-*/
+  p.ex5{
+    margin: 30px;
+    background: mediumslateblue;
+    border: 1px solid black;
+    outline: 1px solid rgb(0, 255, 42);
+    outline-offset: 15px;
+  }

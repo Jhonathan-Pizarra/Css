@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textos</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo4.css">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">-->
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire">
+
+</head>
+<body>
+
+  <h3>Textos CSS</h3>
+
+  <div class="recuadro">
+    <h1 class="titulo">text formatting</h1>
+    <p class="texto">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.
+    The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+    <a class="enlace" target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+  </div>
+
+  <h3>Colores</h3>
+  <p>Podemos especificar el color de un texto. Estos pueden ser: <br>
+    <ul class="texto-colrido">
+      <li class="color-fondo">Nombre - especificas un color mediante un nombre, como "red"</li>
+      <li>HEX - specify a hex value, like "#ff0000"</li>
+      <li>RGB - specify a RGB value, like "rgb(255,0,0)"(rojo, verde, azul)</li>
+      <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+    </ul>
+  </p>
+
+  <h3>Alineación horizontal</h3>
+  <p>La propiedad "text-align" se utiliza para establecer la alineación horizontal de un texto <br>
+     Un texto puede estar alineado a la izquierda o a la derecha, centrado o justificado.
+  </p>
+  <p>Cuando la propiedad se establece para "justificar", cada línea se estira de modo que cada línea tenga el mismo ancho, y los márgenes izquierdo y derecho son rectos (como en revistas y periódicos)</p>
+  <p class="izquierda">Ejemplo 1</p>
+  <p class="centro">Ejemplo 2</p>
+  <p class="derecha">Ejemplo 3</p>
+  <p class="jsutificado">Ejemplo 4</p>
+
+  <h3>Dirección</h3>
+  <p>Las propiedades "direction" y "unicode-bodi" y se pueden utilizar para cambiar la dirección del texto de un elemento</p>
+  <p>Dirección por defecto</p>
+  <p class="direccion">Esta es una direccion de derecha a izquierda.</p>
+
+  <h3>Alineación vertical</h3>
+  <h4>vertical-align: baseline (por defecto):</h4>
+  <p>Una <img class="a" src="images/sqpurple.png" width="9" height="9"> imagen con una alinación por defecto.</p> 
+
+  <h4>vertical-align: text-top:</h4>
+  <p>Una <img class="b" src="images/sqpurple.png" width="9" height="9"> imagen con alineación arriba del texto.</p> 
+
+  <h4>vertical-align: text-bottom:</h4>
+  <p>Una <img class="c" src="images/sqpurple.png" width="9" height="9"> imagen con alineación abajo del texto.</p>
+
+  <h4>vertical-align: sub:</h4>
+  <p>Una <img class="d" src="images/sqpurple.png" width="9" height="9"> imagen con alineación a modo de subitulo del texto.</p> 
+
+  <h4>vertical-align: sup:</h4>
+  <p>Una <img class="e" src="images/sqpurple.png" width="9" height="9"> imagen con alineación a modo de elevado del texto</p>
+
+
+  <h3>Decoración de texto</h3>
+  <p>La propiedad "text-decoration" se utiliza para establecer o quitar decoraciones del texto. <br>
+    Por ejemplo: El valor text-decoration: none; se utiliza a menudo para eliminar el subrayado de los vínculos
+  </p>
+
+  <p>Un link sin subrayado: <a class="vinculo" href="https://jhonathan-pizarra.github.io/portfolio/">Portfolio</a></p>
+
+  <p class="linea-top">HOLA</p>
+  <p class="linea-medio">HOLA</p>
+  <p class="linea-bajo">HOLA</p>
+
+  
+  <h3>Transformación de texto</h3>
+  <p>La propiedad "text-decoration" se utiliza para especificar letras mayúsculas y minúsculas en un texto </p>
+  <p class="lowercase">HE SIDO TRANSMORADO A MINUSCULA</p>
+  <p class="capitalize">Soy una ORACION</p>
+  <p class="uppercase">soy un chiquitin!</p>
+
+  <h3>Espaciado de texto</h3>
+  <p>Hay muchas formas de hacer un espaciado, y muchas formas de aplicarlos, que si para letras, o palabras, espacio entre lineas y demás</p>
+  <p class="espaciado-letras">Soy un espaciado entre letras</p>
+  <p class="espaciado-palabras">Soy un espaciado entre palabras</p>
+  <p class="espaciado-lineas">Soy un espaciado entre lineas <br> No es genial?</p>
+  <p class="identacion">Soy una identación (Un tab)</p>
+  <p class="wrap">
+    Soy un wrap (O sea que acomodo todo en una sola línea)
+    Soy un wrap (O sea que acomodo todo en una sola línea)
+    Soy un wrap (O sea que acomodo todo en una sola línea)
+    Soy un wrap (O sea que acomodo todo en una sola línea)
+    Soy un wrap (O sea que acomodo todo en una sola línea)  
+  </p>
+
+  <h3>Sombra del texto</h3>
+  <p class="sombra">Sombra 1</p>
+  <p class="sombra-colorida">Sombra 2</p>
+  <p class="sombra-colorida-2">Sombra 3</p>
+    
+  <h3>Fuentes</h3>
+  <p>La fuente correcta tiene un gran impacto en la forma en que los lectores experimentan un sitio web. <br>
+     También es importante elegir el color y el tamaño de texto correctos para la fuente. 
+  </p>
+
+  <h4>Fuentes Genericas</h4>
+  <p>En CSS hay cinco familias de fuentes genéricas:
+    <ul>
+      <li>Las fuentes "serif" tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li>
+      <li>Las fuentes "Sans-Serif" tienen líneas limpias (sin trazos pequeños adjuntos). Crean un aspecto moderno y minimalista</li>
+      <li>"Monospace" todas las letras tienen el mismo ancho fijo. Crean un aspecto mecánico.</li>
+      <li> "Cursive" imitan la escritura humana.</li>
+      <li> "Fantasy " son fuentes decorativas / juguetonas.</li>
+    </ul>
+  </p>
+
+  <h4>Todas las tipografías (fuentes aplicados a textos) se reducen a una de estas familias</h4>
+  <img src="images/14_Clasificaicon-Ejemplos.PNG" width="600" height="500"/>
+
+  <h4>Propiedades de fuentes </h4>
+  <p>En CSS, usamos la propiedad "font-family" para especificar la fuente de un texto</p>
+  <p>Es común que algunos navegadores no reconozcan las familia de fuente que usamos, y por eso es recomendable que la propiedad "font-family" deba contener varios nombres de fuente como un sistema de "reserva", para garantizar la máxima compatibilidad entre navegadores / sistemas operativos. <br> 
+    Comience con la fuente que desee y termine con una familia genérica (para permitir que el navegador elija una fuente similar en la familia genérica, si no hay otras fuentes disponibles). 
+  </p>
+  <p> Los nombres de las fuentes deben separarse con comas, y tendríamos:</p>
+  <p class="f1">This is a paragraph, shown in the Times New Roman font.</p>
+  <p class="f2">This is a paragraph, shown in the Arial font.</p>
+  <p class="f3">This is a paragraph, shown in the Lucida Console font.</p>
+
+  <h2>Fuentes seguras</h2>
+  <p>Las fuentes seguras para la web son fuentes que se instalan universalmente en todos los navegadores y dispositivos. </p>
+  <p>Sin embargo, no hay fuentes 100% completamente seguras para la web. Siempre existe la posibilidad de que una fuente no se encuentre o no esté instalada correctamente. <br>
+     Por lo tanto, es muy importante usar siempre fuentes de reserva.
+  </p>
+  <p>
+    Esto significa que debe agregar una lista de "fuentes de copia de seguridad" similares en la propiedad. Si la primera fuente no funciona, el navegador intentará la siguiente, y la siguiente, y así sucesivamente.
+  </p>
+  <p>
+    Siempre termine la lista con un apellido de fuente genérico
+  </p>
+  
+
+  <h4>Fuentes Seguras</h4>
+  <ul>
+    <li>Arial (sans-serif)</li>
+    <li>Verdana (sans-serif)</li>
+    <li>Helvética (sans-serif)</li>
+    <li>Tahoma (sans-serif)</li>
+    <li>Trebuchet MS (sans-serif)</li>
+    <li>Times New Roman (serif)</li>
+    <li>Georgia (serif)</li>
+    <li>Garamond (serif)</li>
+    <li>Courier New (monoespacio)</li>
+    <li>Brush Script MT (cursiva)</li>
+  </ul>
+
+  <p>Antes de publicar su sitio web, siempre verifique cómo aparecen sus fuentes en diferentes navegadores y dispositivos, ¡y siempre use fuentes de reserva!</p>
+  <p>Procura que estén en la misma familia, hasta llegar al generico puedes verlo aqui: <a href="https://www.w3schools.com/css/css_font_fallbacks.asp"></a> ejemplo </p>
+
+  <h4>Negritas, Cursivas, Subrayados</h4>
+  <p>La propiedad "font-style" es usado para dar forma curva a los textos, sus valores pueden ser</p>
+  <ul>
+    <li class="italic">This is a paragraph in italic style.</li>
+    <li class="oblique">This is a paragraph in oblique style</li>
+  </ul>
+
+  <p>La propiedad "font-weight" es usado para dar negrita a los textos, sus valores pueden ser</p>
+  <ul>
+    <li class="light">Hola Mundo!</li>
+    <li class="thick">Hola Mundo!</li>
+    <li class="thicker">Hola Mundo!</li>
+  </ul>
+
+  <p>La propiedad "font-variant"especifica si un texto debe mostrarse o no en una fuente de mayúsculas pequeñas. <br>
+    En una fuente de mayúsculas pequeñas, todas las letras minúsculas se convierten en letras mayúsculas. Sin embargo, esas letras aparecen del tamaño de las minúsculas.
+  </p>
+
+  <p class="small">Wao... House es un creep</p>
+
+  <h4>Tamaño del texto</h4>
+  <p>La propiedad "font-size" establece el tamaño del texto. <br>
+    Sin embargo, no debe usar ajustes de tamaño de fuente para que los párrafos parezcan encabezados, o que los encabezados se vean como párrafos. <br>
+    Siempre use las etiquetas HTML adecuadas, como "h1"- "h6" para encabezados y "p" para párrafos.
+  </p>
+
+  <p>El valor del tamaño de fuente puede ser un tamaño absoluto o relativo.</p>
+  <p>
+    Tamaño absoluto:  <br>
+
+    * Establece el texto en un tamaño especificado  <br>
+    * No permite a un usuario cambiar el tamaño del texto en todos los navegadores (malo por razones de accesibilidad) <br>
+    * El tamaño absoluto es útil cuando se conoce el tamaño físico de la salida <br>
+    <br>
+    
+    Tamaño relativo:  <br>
+  
+    * Establece el tamaño relativo a los elementos circundantes  <br>
+    * Permite a un usuario cambiar el tamaño del texto en los navegadores  <br>
+  </p>
+
+  <p>Si no especifica un tamaño de fuente, el tamaño predeterminado para el texto normal, como los párrafos, es 16px (16px=1em).</p>
+  <p>Podemos establecer el tamaño de la fuete con pixeles, em, porcentajes o una combinación de porcentajes con em </p>
+  
+  <h4>Em vs PX</h4>
+  <p>El texto por defecto tiene 16px, para calcularlo en em se usa la fórmula: píxeles/16=em </p>
+  <p>
+    Los programadores suelen utilizar "em" antes de "px" ya que con el tamaño em, es posible ajustar el tamaño del texto en todos los navegadores. <br>
+    Pero no siempre es así, en Internet Explorer por ejemplo, la letra crece más de lo debido cuando se hace un zoom. <br>
+    Una solución viable sería La solución que funciona en todos los navegadores es establecer un tamaño de fuente predeterminado en porcentaje para la etiqeuta "boody " al 100%
+  </p>
+  <p class="size">Este texto tienne un tamaño chévere!</p>
+
+  <h4>Texto responvio</h4>
+  <p>
+    El tamaño del texto se puede establecer con una unidad "vw", lo que significa el "ancho de la ventana gráfica".(view widht) <br>
+    De esa manera, el tamaño del texto seguirá el tamaño de la ventana del navegador, trata de achicar o agrandar la pantalla:
+  </p>
+
+  <p class="responsivo">Soy un texto RESPONSIVO</p>
+
+  <h4>Fuentes de GOOGLE</h4>
+  <p>Si no desea utilizar ninguna de las fuentes estándar en HTML, puede utilizar Google Fonts.</p>
+  <h5>¿Cómo usar google fonts?</h5>
+  <p>Simplemente agregue un enlace especial de hoja de estilos dentro de las etiquetas head /head como las otras hojas de estilo css y luego consulte la fuente en el CSS.</p>
+
+  <p class="google">Hola! vengo desde Google ;)</p>
+  <p>Al especificar una fuente en CSS, siempre enumere al menos una fuente de reserva (para evitar comportamientos inesperados). Por lo tanto, también aquí debe agregar una familia de fuentes genéricas (como serif o sans-serif) al final de la lista.</p>
+  <p>Para usar varias fuentes de Google, simplemente separe los nombres de las fuentes con un carácter "!", de la siguiente manera: <br>
+     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" ¿Lo ves?
+  </p>
+
+  <h4>Efectos para fuentes</h4>
+  <p>
+    Google también ha habilitado diferentes efectos de fuente que puedes usar. <br>
+    Para utilizar efectos, añadiremos la siguiente sintaxis: &effect=fire a la api que traigamos<br>
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire" <br>
+    Y por lo general, la clase tiene como valor el formato: "font-effect-effectname"
+  </p>
+
+  <!--Esta clase no está en el css, sino en google-->
+  <p class="font-effect-fire">Lorem ipsum dolor sit amet.</p> 
+
+  <p>
+    Para solicitar varios efectos de fuente, simplemente separe los nombres de los efectos con un carácter de "|"<br>
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
+  </p>
+
+  <h3 class="font-effect-outline">Outline Effect</h3>
+  <h3 class="font-effect-emboss">Emboss Effect</h3>
+  <h3 class="font-effect-shadow-multiple">Multiple Shadow Effect</h3>
+
+  <h4>Emparejamiento de fuentes</h4>
+  <p>
+    Tomamos varias reglas que hacen de nuestra tipografía exitosas en la web <br> 
+    Puedes revisar más información en <a href="https://www.w3schools.com/css/css_font_pairings.asp">reglas de emparejamiento</a>
+  </p> 
+
+  <h4>FONT</h4>
+  <p>Puedes aplicar estilos de fuente a un texto de la manera tradicional: <br>
+    body { <br>
+      background-color: black; <br>
+      font-family: Verdana, sans-serif; <br>
+      font-size: 16px; <br>
+      color: gray;  <br>
+    }
+  </p>
+
+  <p>
+    O puedes usar la propiedad "font":  <br>
+      .etiqueta { <br>
+        font: 20px Arial, sans-serif; <br>
+      } <br> <br>
+
+      Este segundo ejemplo ademas añade un espacio entre lineas: <br> <br>
+      .etiqueta { <br>
+        font: italic bold 12px/30px Georgia, serif; <br>
+      }
+  </p>
+  <p class="font"> 
+    En este párrafo la fuente es italic y bold, el tamaño es 12 pizeles, <br>  el interlineado es de 30 pixeles y la familia fuente es Georgia.
+  </p>
+
+</body>
+</html>

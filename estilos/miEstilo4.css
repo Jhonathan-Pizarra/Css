@@ -1,0 +1,205 @@
+/*Textos*/
+
+.recuadro {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+.texto {
+  text-indent: 50px; /*Text-ident le da ese espacio pequeño en la primera línea*/
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.enlace {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+/*Colorización*/
+ul.texto-colrido{
+  color:tomato;
+}
+
+.color-fondo{
+  background-color: lightgrey;
+  color: crimson;
+}
+
+/*Alineación vertical*/
+.izquierda {
+  text-align: left;
+}
+
+.centro {
+  text-align: center;
+}
+
+
+.derecha {
+  text-align: right;
+}
+
+.jsutificado {
+  text-align: justify;
+}
+
+.direccion{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/*Alineación vertical*/
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+/*Decoracion del texto*/
+a.vinculo {
+  text-decoration: none;
+}
+
+p.linea-top {
+  text-decoration: overline;
+}
+
+p.linea-medio {
+  text-decoration: line-through;
+}
+
+p.linea-bajo {
+  text-decoration: underline;
+}
+
+/*Transformación del texto*/
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+/*Spaciado*/
+p.identacion {
+  text-indent: 50px;
+}
+
+p.espaciado-letras {
+  letter-spacing: 3px;
+}
+
+p.espaciado-palabras {
+  word-spacing: 10px;
+}
+
+p.espaciado-lineas {
+  line-height: 0.8;
+}
+
+p.wrap {
+  white-space: nowrap;
+}
+
+/*Sombras*/
+.sombra {
+  text-shadow: 2px 2px;
+}
+
+.sombra-colorida {
+  text-shadow: 2px 2px red;
+}
+
+.sombra-colorida-2 {
+  text-shadow: 2px 2px 5px cyan;
+}
+
+/*Fuentes*/
+.f1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.f2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.f3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/*Cursiva, Negrita, subrayado */
+/*Todas pueden tener valor : normal*/
+li.italic {
+  font-style: italic;
+}
+
+li.oblique {
+  font-style: oblique;
+}
+
+li.light {
+  font-weight: lighter;
+}
+
+li.thick {
+  font-weight: bold;
+}
+
+li.thicker {
+  font-weight: 900;
+}
+
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+
+/*Tamaño*/
+p.size {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+body {
+  font-size: 100%; /*Asi corregimos el error del zoom! */
+}
+
+p.responsivo {
+  font-size: 2vw; /* 1vw = 1% del ancho de la ventanilla del navegador. Si la ventanilla tiene 50 cm de ancho, 1vw es 0,5 cm*/
+}
+
+p.google {
+  font-family: "Sofia", sans-serif;
+}
+
+p.font {
+  font: italic bold 12px/30px Georgia, serif;
+}

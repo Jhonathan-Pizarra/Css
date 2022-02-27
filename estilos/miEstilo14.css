@@ -1,0 +1,68 @@
+/**OPACITY**/
+img.c1 {
+  opacity: 0.5;
+}
+
+/**OPACITY OVER**/
+img.c2 {
+  opacity: 0.5;
+}
+
+img.c2:hover {
+  opacity: 1.0;
+}
+
+/**Transparent Box**/
+div.box {
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+div.first {
+  opacity: 0.1;
+}
+
+div.second {
+  opacity: 0.3;
+}
+
+div.third {
+  opacity: 0.6;
+}
+
+/**RGBA Colores**/
+div.a {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.b {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.c {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.d {
+  background: rgba(76, 175, 80, 0.6);
+}
+
+/**texto en imagen**/
+div.background {
+  background: url(../images/tokyo.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}

@@ -1,0 +1,96 @@
+/*Links*/
+/*En este caso hago referencia a todas las etiquetas "a" */
+a {
+  color: hotpink;
+}
+
+/***Estados***/
+/*En este caso hago referencia a todas los elementos con clase "enlace" */
+/* unvisited link */
+.enlace:link {
+  color: red;
+}
+
+/* visited link */
+.enlace:visited {
+  color: green;
+}
+
+/* mouse over link */
+.enlace:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.enlace:active {
+  color: blue;
+}
+
+/*Decoración*/
+.enlace2:link {
+  text-decoration: none;
+}
+
+.enlace2:visited {
+  text-decoration: none;
+}
+
+.enlace2:hover {
+  text-decoration: underline;
+}
+
+.enlace2:active {
+  text-decoration: underline;
+}
+
+/*Color de fondo*/
+.enlace3:link {
+  background-color: yellow;
+}
+
+.enlace3:visited {
+  background-color: cyan;
+}
+
+.enlace3:hover {
+  background-color: lightgreen;
+}
+
+.enlace3:active {
+  background-color: hotpink;
+} 
+
+/*Botones de enlace*/
+
+.enlace4:link, .enlace4:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.enlace4:hover, .enlace4:active {
+  background-color: red;
+}
+
+a.one:link, a.one:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.one:hover, a.one:active {
+  background-color: green;
+  color: white;
+}
+
+/*Por cierto, no está mal aplicar efectos como lo he venido haciendo .clase:estado, sin embargo la forma standar es: */
+a.two:link {color:#ff0000;} /*A todos los elementos "a" que tengan la clase two*/
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}

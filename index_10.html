@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo10.css">
+</head>
+<body>
+
+  <h2>Overflow</h2>
+  <p>La propiedad de desbordamiento de CSS controla lo que sucede con el contenido que es demasiado grande para caber en un área</p>
+  <div id="overflowTest">
+    Este texto es realmente largo y la altura de su contenedor es de solo 100 píxeles. Por lo tanto, se agrega una barra de desplazamiento para ayudar al lector a desplazarse por el contenido. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud ejercicio ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend opción congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem 
+  </div>
+
+  <p>The overflow property has the following values:</p>
+  <ul>
+    <li>visible, por defecto, El desbordamiento(overflow) no está recortado. El contenido se renderiza fuera de la caja del elemento.</li>
+    <li>hidden, el desbordamiento se recorta y el resto del contenido será invisible</li>
+    <li>scroll, se recorta el desbordamiento y se agrega una barra de desplazamiento para ver el resto del contenido</li>
+    <li>auto, similar al desplazamiento, pero agrega barras de desplazamiento solo cuando es necesario </li>
+  </ul>
+ 
+  <p><b>Nota:</b>La propiedad de overflow solo funciona para elementos de bloque con una altura especificada. </p>
+  <p><b>Nota:</b> en OS X Lion (en Mac), las barras de desplazamiento están ocultas de forma predeterminada y solo se muestran cuando se utilizan (aunque "overflow: scroll" está configurado) </p>
+  
+  <h2>Overflow: visible</h2>
+  <p>De forma predeterminada, el desbordamiento es visible, lo que significa que no está recortado y se renderiza fuera de la caja del elemento: </p>
+
+  <div id="overflowVisible">
+    You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+  </div>
+
+  <h2>Overflow: hidden</h2>
+  <p> Con el valor oculto, el desbordamiento se recorta y el resto del contenido está oculto: </p>
+  <div id="overflowHidden"> 
+    Puede utilizar la propiedad de desbordamiento cuando desee tener un mejor control del diseño. La propiedad de desbordamiento especifica qué sucede si el contenido desborda el cuadro de un elemento. 
+  </div> 
+  <p> Intente eliminar la propiedad de desbordamiento para comprender cómo funciona. </p> 
+
+  <h2>Overflow: scroll</h2>
+  <p>Al configurar el valor para desplazarse, el desbordamiento se recorta y se agrega una barra de desplazamiento para desplazarse dentro del cuadro. Tenga en cuenta que esto agregará una barra de desplazamiento tanto horizontal como verticalmente (incluso si no la necesita): </p>
+  <div id="overflowScroll"> 
+    Puede utilizar la propiedad de desbordamiento cuando desee tener un mejor control del diseño. La propiedad de desbordamiento especifica qué sucede si el contenido desborda el cuadro de un elemento. 
+  </div> 
+
+  <h2>Overflow auto</h2>
+  <p>El valor automático es similar al desplazamiento, pero agrega barras de desplazamiento solo cuando es necesario: </p>
+
+  <div id="overflowAuto">
+    Puede utilizar la propiedad de desbordamiento cuando desee tener un mejor control del diseño. La propiedad de desbordamiento especifica qué sucede si el contenido desborda la caja de un elemento. 
+  </div>
+
+  <h2>Overflow-x and Overflow-y</h2>
+  <p>Las propiedades overflow-x y overflow-y especifican si cambiar el desbordamiento de contenido solo horizontal o verticalmente (o ambos): </p>
+  <ul>
+    <li>overflow-x especifica qué hacer con los bordes izquierdo / derecho del contenido.</li>
+    <li>overflow-y especifica qué hacer con los bordes superior / inferior del contenido.</li>
+  </ul>
+
+  <h2>Clear & Float</h2>
+  <p>La propiedad flotante de CSS especifica cómo debe flotar un elemento.</p>
+  <p>La propiedad clear de CSS especifica qué elementos pueden flotar junto al elemento despejado y en qué lado. </p>
+
+  <h2>Propiedad Float</h2>
+  <p>La propiedad float se utiliza para posicionar y formatear contenido</p>
+  <p>La propiedad float puede tener uno de los siguientes valores: </p>
+  <ul>
+    <li>left: el elemento flota a la izquierda de su contenedor</li>
+    <li>right: el elemento flota a la derecha de su contenedor</li>
+    <li>none: el elemento no flota (se mostrará justo donde aparece en el texto). Esto es predeterminado</li>
+    <li>inherit: el elemento hereda el valor flotante de su padre </li>
+  </ul>
+ 
+  <p>En su uso más simple, la propiedad float se puede usar para envolver texto alrededor de imágenes. </p>
+  
+  
+  <h2>Float Right</h2>
+  <p>El siguiente ejemplo especifica que una imagen debe flotar hacia la derecha en un texto:</p>
+  <div class="recuadro">
+    <p><img class="img1" src="./images/cuatro_Estrellas.png" alt="Pineapple" style="width:100px;height:100px;margin-left:15px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </div>
+  <p> En este ejemplo, la imagen foltó hacia la derecha en el párrafo y el texto del párrafo se sjustó alrededor de la imagen. </p> 
+
+  <h2>Float Left</h2>
+  <p>El siguiente ejemplo especifica que una imagen debe flotar hacia la izquierda en un texto:</p>
+  <div class="recuadro">
+    <p><img class="img2" src="./images/cuatro_Estrellas.png" alt="Pineapple" style="width:100px;height:100px;margin-right:15px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </div>
+  <p> En este ejemplo, la imagen foltó hacia la izquierda en el párrafo y el texto del párrafo se sjustó alrededor de la imagen. </p> 
+
+  
+  <h2>No Float</h2>
+  <p>En el siguiente ejemplo, la imagen se mostrará justo donde aparece en el texto (float: none;): </p>
+  <div class="recuadro">
+    <p><img class="img3" src="./images/cuatro_Estrellas.png" alt="Pineapple" style="width:100px;height:100px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </div>
+  <p> En este ejemplo, la imagen y el texto son uno con el párrafo y el texto del párrafo se sjustó junto de la imagen. </p> 
+
+  
+
+  <h2>Float Uno junto a otro</h2>
+  <p>Normalmente, los elementos div se mostrarán uno encima del otro. Sin embargo, si usamos float: left podemos dejar que los elementos floten uno al lado del otro: </p>
+  <div class="base cuadro1">Div 1</div>
+  <div class="base cuadro2">Div 2</div>
+  <div class="base cuadro3">Div 3</div>
+  <br>
+
+  <h2>Clear and Clearfix</h2>
+  <p>La propiedad clear, cuando usamos la propiedad float, y queremos el siguiente elemento debajo (no a la derecha ni a la izquierda), tendremos que usar la propiedad clear. </p>
+  <p>La propiedad clear especifica lo que debería suceder con el elemento que está al lado de un elemento flotante. </p>
+  <p>La propiedad clear puede tener uno de los siguientes valores:</p>
+  <ul>
+    <li>none: el elemento no se coloca debajo de los elementos flotantes izquierdo o derecho. Esto es predeterminado</li>
+    <li>left: el elemento se empuja debajo de los elementos flotantes izquierdosr</li>
+    <li>right: el elemento se empuja debajo de los elementos flotantes derechos</li>
+    <li>both: el elemento se empuja debajo de los elementos flotantes izquierdo y derecho</li>
+    <li>inherit: el elemento hereda el valor clear de su padre  </li>
+  </ul>
+
+  <h2>Sin clear</h2>
+  <div class="div1">div1</div>
+  <div class="div2">div2 - Observe que div2 está después de div1 en el código HTML. Sin embargo, dado que div1 flota a la izquierda, el texto en div2 fluye alrededor  div1.</div>
+  <br><br>
+
+  <h2>Con clear</h2>
+  <div class="div3">div3</div>
+  <div class="div4">div4 - Aquí, claro: izquierda; mueve div4 hacia abajo debajo del div3 flotante. El valor "left" borra los elementos flotantes a la izquierda. También puede borrar "derecho" y "ambos" .</div>
+  
+  <h2>El truco clearfix </h2>
+  <p>Si un elemento flotante es más alto que el elemento contenedor, se "desbordará" fuera de su contenedor. Luego podemos agregar un truco de clearfix para resolver este problema: </p>
+
+  <h3>Sin Clearfix</h3>
+  <p>Esta imagen flota a la derecha. También es más alto que el elemento que lo contiene, por lo que se desborda fuera de su contenedor: </p>
+  <div class="divClearFix">
+    <div>
+      <img class="imgClearFix" src="./images/cuatro_Estrellas.png" alt="Pineapple" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+  </div>
+
+  <h3 style="clear:right">Con Clearfix</h3>
+  <p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+  <div class="divClearFix">
+    <div class="clearfix">
+      <img class="imgClearFix2" src="./images/cuatro_Estrellas.png" alt="Pineapple" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+  </div>
+
+  <p><b>Nota:</b>El overflow: auto clearfix funciona bien siempre que pueda mantener el control de sus márgenes y relleno (de lo contrario, es posible que vea barras de desplazamiento). Sin embargo, el nuevo y moderno truco clearfix es más seguro de usar y el siguiente código se usa para la mayoría de las páginas web: </p>
+
+  <h2 style="clear:right">Con nuevo y moderno Clearfix</h2>
+  <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+  <div class="divClearFix">
+    <div class="clearfix">
+      <img class="imgClearFix" src="./images/cuatro_Estrellas.png" alt="Pineapple" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+  </div>
+
+
+  <h2>Grid of Boxes</h2>
+
+  <div class="clearfix">
+    <div class="box" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+    </div>
+  </div>
+
+  <p>Nota: Aquí, usamos el truco clearfix para encargarnos del flujo de diseño. También usamos la propiedad de tamaño de caja para asegurarnos de que la caja no se rompa debido al relleno adicional.</p>
+
+  <h2>Grid of Boxes 2</h2>
+  <p> Tenga en cuenta que también usamos el truco clearfix para cuidar el flujo de diseño, y que agregamos la propiedad de tamaño de caja para asegurarnos de que el contenedor de la imagen no se rompa debido al relleno adicional. Intente eliminar este código para ver el efecto. </p> 
+  <div class="clearfix">
+    <div class="img-container">
+    <img src="./images/img_5terre.jpg" alt="Italy" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="./images/img_forest.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="img-container">
+    <img src="./images/img_mountains.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  
+
+  <h2>Cajas de igual altura </h2>
+  <p>En el ejemplo anterior, aprendimos a hacer flotar cajas una al lado de la otra con el mismo ancho. Sin embargo, no es fácil crear cajas flotantes con alturas iguales. Sin embargo, una solución rápida es establecer una altura fija, como en el siguiente ejemplo: </p>
+  <div class="clearfix">
+    <div class="boxb" style="background-color:#bbb">
+    <h2>Box 1</h2>
+    <p>Some content, some content, some content</p>
+    </div>
+    <div class="boxb" style="background-color:#ccc">
+    <h2>Box 2</h2>
+    <p>Some content, some content, some content</p>
+    <p>Some content, some content, some content</p>
+    <p>Some content, some content, some content</p>
+    </div>
+  </div>
+
+  <p>Está bien usar la altura CSS si puedes garantizar que las cajas siempre tendrán la misma cantidad de contenido, pero no siempre es así. Si pruebas por ejemplo en un teléfono móvil (o cambia el tamaño de la ventana del navegador), verás que el contenido del segundo cuadro se mostrará fuera del cuadro. </p>
+  <p>Veamso como solucionarlo..!! </p> 
+
+  <h2>Flexible Boxes</h2>
+
+  <div class="flex-container">
+    <div class="boxc">Box 1 - Este es un texto para asegurarse de que el contenido sea realmente alto. Este es un texto para asegurarse de que el contenido sea realmente alto. </div>
+    <div class="boxc">Box 2 - Mi altura seguirá al Cuadro 1. </div>
+  </div>
+
+  <p>Prueba redimensionando la pantalla ;).</p>
+  <p><strong>Note:</strong> Flexbox no es soportado en  Internet Explorer 10 o versiones anteriores.</p>
+
+  <p>También puedes aplicarlos a barras, a grids... pero no es tan aconsejable, igual puedes ver más información en:
+    <a href="https://www.w3schools.com/css/css_float_examples.asp">Más ejemplos</a>
+  </p>
+
+</body>
+</html>

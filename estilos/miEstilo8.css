@@ -1,0 +1,36 @@
+/*Dispoisición*/
+
+li.inline {
+  display: inline;
+}
+
+span.bloque {
+  display: block;
+}
+
+/*Display:none vs visibility:hiddern*/
+h3.hidden {
+  display: none; /*display:none removes the element from the document. It does not take up any space.*/
+}
+
+h3.hidden2 {
+  visibility: hidden; /*visibility:hidden hides the element, but it still takes up space in the layout.*/
+}
+
+/*Display none*/
+#panel, .flip {
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border: solid 1px #a6d8a8;
+  margin: auto;
+}
+
+#panel {
+  display: none;
+}
+
+
+

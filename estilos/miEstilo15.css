@@ -1,0 +1,185 @@
+ul.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**Navbar vertical**/
+ul.c2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.c3 a.c3 {
+  display: block; /* Mostrar los enlaces como elementos de bloque hace que se pueda hacer clic en toda el área del enlace (no solo en el texto) y nos permite especificar el ancho (y el relleno, margen, alto, etc. si lo desea)*/
+  width: 60px; /*Los elementos de bloque ocupan todo el ancho disponible por defecto. Queremos especificar un ancho de 60 píxeles.*/
+  background-color: #dddddd;
+}
+
+/**Navbar**/
+ul.c4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.c4 a.c4 {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li.c4 a.c4:hover {
+  background-color: #555;
+  color: white;
+}
+
+/***Active link***/
+ul.c5 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li.c5 a.c5 {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.c5 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li.c5 a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/**Barra centrada**/
+ul.c6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li.c6 a.c6 {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.c6 {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li.c6:last-child {
+  border-bottom: none;
+}
+
+li.c6 a.c7 {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li.c6 a:hover:not(.c7) {
+  background-color: #555;
+  color: white;
+}
+
+/**Full 
+body.prueba {
+  margin: 0;
+}widht**/
+
+ul.c8 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li.c8 a.c8 {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li.c8 a.c9 {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li.c8 a:hover:not(.c9) {
+  background-color: #555;
+  color: white;
+}
+
+/**NAV horizontal**/
+ul.c10 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.c11 {
+  display: inline;
+}
+/*display: inline; - De forma predeterminada, los elementos <li> son elementos de bloque. 
+Aquí, eliminamos los saltos de línea antes y después de cada elemento de la lista, para mostrarlos en una línea. 
+*/
+
+/*Navar*/
+ul.c12 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.c12 {
+  float: left;
+}
+
+li.c12 a.c12 {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+/*Liks*/
+ul.c13 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}

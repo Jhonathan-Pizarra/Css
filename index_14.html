@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="./estilos/miEstilo14.css">
+</head>
+<body>
+
+  <h2>CSS Opacity / Transparency</h2>
+  <p>La propiedad de opacity especifica la opacidad / transparencia de un elemento. </p>
+
+  <h2>Transparent Image</h2>
+  <p>La propiedad de opacidad puede tomar un valor de 0.0 a 1.0. Cuanto menor sea el valor, más transparente: </p>
+  <p>Imagen con 50% opacity:</p>
+  <img class="c1" src="./images/img_forest.jpg" alt="Forest" width="170" height="100">
+
+  <h2>Transparent Hover Effect</h2>
+  <p>La propiedad de opacidad se usa a menudo junto con el selector: hover para cambiar la opacidad al pasar el mouse: </p>
+  <img class="c2" src="./images/img_forest.jpg" alt="Forest" width="170" height="100">
+
+  <h2>Transparent Box</h2>
+  <p>Cuando se usa la propiedad de opacidad para agregar transparencia al fondo de un elemento, todos sus elementos secundarios heredan la misma transparencia. Esto puede hacer que el texto dentro de un elemento completamente transparente sea difícil de leer: </p>
+  <div class="first"><p>opacity 0.1</p></div>
+  <div class="second"><p>opacity 0.3</p></div>
+  <div class="third"><p>opacity 0.6</p></div>
+  <div class="box"><p>opacity 1 (default)</p></div>
+
+  <h2>Transparency using RGBA</h2>
+  <p>Si no desea aplicar opacidad a los elementos secundarios, como en nuestro ejemplo anterior, use valores de color RGBA. El siguiente ejemplo establece la opacidad del color de fondo y no del texto: </p>
+  <p>Además de RGB, puede utilizar un valor de color RGB con un canal alfa (RGBA), que especifica la opacidad de un color.</p>
+  <div class="b"><p>opacity 0.1</p></div>
+  <div class="c"><p>opacity 0.3</p></div>
+  <div class="d"><p>opacity 0.6</p></div>
+  <div class="a"><p>opacity 1 (default)</p></div>
+
+  <h2>Text in Transparent Box</h2>
+  <div class="background">
+    <div class="transbox">
+      <p>This is some text that is placed in the transparent box.</p>
+    </div>
+  </div>
+
+  <p>
+    Primero, creamos un elemento "div" (class = "background") con una imagen de fondo y un borde.
+    Luego creamos otro "div" (class = "transbox") dentro del primer "div".
+    El "div class = "transbox"> tiene un color de fondo y un borde: el div es transparente.  
+    Dentro del "div" transparente, agregamos algo de texto dentro de un elemento "p". 
+  </p>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*Listas*/
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+/*Imagenes*/
+ul.image {
+  list-style-image: url("../images/cuarito.gif");
+}
+
+/*Colroes*/
+ol.c1 {
+  background: #ff9999;
+  padding: 20px;
+}
+
+ul.c2 {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ol.c1 li.t1 {
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+ul.c2 li.t2 {
+  background: #cce5ff;
+  margin: 5px;
+}
+
+ul.borde {
+  border-left: 5px solid red;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+/*Otras viñetas*/
+ol.g {list-style-type: decimal-leading-zero;}
+ol.h {list-style-type: georgian;}
+ol.i {list-style-type: hebrew;}
+ol.j {list-style-type: hiragana;}
+
+/*Position*/
+ul#myList {
+  list-style-position:inside; /*Valores pueden ser inside, outside, inherit, initial*/
+}
+
+ul#myList2 {
+  list-style-position:outside;
+}

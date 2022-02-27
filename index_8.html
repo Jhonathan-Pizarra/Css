@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Displays</title>
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo8.css">
+</head>
+<body>
+
+  <h2>La propiedad Display</h2>
+
+  <p> La propiedad especifica si/como un elemento es mostrado <br>
+    Cada elemento HTML tiene un valor de visualización predeterminado dependiendo del tipo de elemento que sea. El valor de visualización predeterminado para la mayoría de los elementos es  .blockinline
+  </p>
+
+  <h3>Mostar en Bloque - display: block</h3>
+  <p>siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende a la izquierda y a la derecha hasta donde puede). <br>
+  Algunso elementos de tipo bloque son:</p>
+  <ul>
+    <li>h1 - h6</li>
+    <li>p</li>
+    <li>fomrs</li>
+    <li>header</li>
+    <li>footer</li>
+    <li>section</li>
+    <li>div</li>
+  </ul>
+
+  <h3>Mostar en fila (linea) - display: inline</h3>
+  <p>Un elemento en línea no comienza en una nueva línea y solo ocupa la anchura necesaria.<br>
+  Algunso elementos de tipo en fila ( o linea) son:</p>
+  <ul>
+    <li>span</li>
+    <li>a</li>
+    <li>img</li>
+  </ul>
+
+  <h3>Cambiar la manera</h3>
+  <p>Como se mencionó, cada elemento tiene un valor de visualización predeterminado. Sin embargo, puede anular esto. <br>
+    Cambiar un elemento en línea a un elemento de bloque, o viceversa, puede ser útil para hacer que la página se vea de una manera específica.
+  </p>
+  <p>Original:</p>
+  <ul>
+    <li><a href="#" target="_blank">HTML</a></li>
+    <li><a href="#" target="_blank">CSS</a></li>
+    <li><a href="#" target="_blank">JavaScript</a></li>
+  </ul>
+
+  <p>Nuevo:</p>
+  <ul>
+    <li class="inline"><a href="https://www.facebook.com/" target="_blank">HTML</a></li>
+    <li class="inline"><a href="https://www.youtube.com/watch?v=JbcVF2PnDOA" target="_blank">CSS</a></li>
+    <li class="inline"><a href="https://totalseries.org/doctor-house" target="_blank">JavaScript</a></li>
+  </ul>
+
+  <p>Establecer la propiedad de visualización de un elemento solo cambia la forma en que se muestra el elemento, NO el tipo de elemento que es. <br>
+     Por lo tanto, un elemento en fila con un elemento de disposición "bloque" no puede tener otros elementos de bloque dentro de él.
+  </p>
+
+  <span class="bloque">A display property with a value of "block" results in</span> <span class="bloque">a line break between the two elements.</span>
+
+  <h2>Display:hidden</h2>
+  <h3>This is a visible heading</h3>
+  <h3 class="hidden">This is a hidden heading</h3>
+  <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+
+  <h2>Visibility:hidden</h2>
+  <h3>This is a visible heading</h3>
+  <h3 class="hidden2">This is a hidden heading</h3>
+  <p>Notice that the hidden heading still takes up space.</p>
+
+  <p>Para comprender un poco más la diferencia entre estos, te recomiendo ver: <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_display">diferencia entre visibility & display hide</a></p>
+
+  <h3>No Mostrar - display: none</h3>
+  <p> se usa comúnmente con JavaScript para ocultar y mostrar elementos sin eliminarlos y recrearlos. </p>
+  <p class="flip" onclick="myFunction()">Click to show panel</p>
+
+  <div id="panel">
+    <p>This panel contains a div element, which is hidden by default (display: none).</p>
+    <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
+    <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
+    <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+  </div>
+
+    
+  <script>
+    function myFunction() {
+      document.getElementById("panel").style.display = "block";
+    }
+  </script>
+  
+</body>
+</html>

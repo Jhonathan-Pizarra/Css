@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="estilos/miEstilo12.css">
+</head>
+<body>
+
+  <h2>CSS Combinators</h2>
+  <p>Un selector de CSS puede contener más de un selector simple. Entre los selectores simples, podemos incluir un combinador</p>
+  <p>Un combinador es algo que explica la relación entre los selectores. </p>
+
+  <p>Hay cuatro combinadores diferentes en CSS:</p>
+  <ul>
+    <li>selector de descendientes (space)</li>
+    <li>selector de childrens (>)</li>
+    <li>selector de hermanos adyacentes (+)</li>
+    <li>selector general de hermanos (~)</li>
+  </ul>
+  
+
+  <h2>Selector de descendientes </h2>
+  <p>El selector de descendientes coincide con todos los elementos que son descendientes de un elemento especificado.</p>
+  <div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
+  </div>
+  
+  <p>Paragraph 4. Not in a div.</p>
+  <p>Paragraph 5. Not in a div.</p>
+  <p>En este caso rompí la descendencia quitando el flujo div-p, para que ya no se aplique el estilo </p>
+
+
+  <h2>Child Selector (>)</h2>
+  <p>El selector de hijos selecciona todos los elementos que son hijos de un elemento especificado.</p>
+  <div class="c1">
+    <p class="c1">Paragraph 1 in the div.</p>
+    <p class="c1">Paragraph 2 in the div.</p>
+    <section>
+      <!-- not Child but Descendant -->
+      <p class="c1">Paragraph 3 in the div (inside a section element).</p>
+    </section>
+    <p class="c1">Paragraph 4 in the div.</p>
+  </div>
+  <p>Paragraph 5. Not in a div.</p>
+  <p>Paragraph 6. Not in a div.</p>
+  <p>En este caso no es un hijo pero se le aplica el fujo div-p </p>
+
+
+  <h3>Adjacent Sibling Selector (+)</h3>
+  <p>El selector de hermanos adyacente se usa para seleccionar un elemento que está directamente después de otro elemento específico.</p>
+  <p>Los elementos hermanos deben tener el mismo elemento padre y "adyacente" significa "inmediatamente siguiente". </p>
+
+  <div class="c2">
+    <p class="c2">Paragraph 1 in the div.</p>
+    <p class="c2">Paragraph 2 in the div.</p>
+  </div>
+
+  <p class="c2">Paragraph 3. After a div.</p>
+  <p class="c2">Paragraph 4. After a div.</p>
+
+  <div class="c2">
+    <p class="c2">Paragraph 5 in the div.</p>
+    <p class="c2">Paragraph 6 in the div.</p>
+  </div>
+  <p class="c2">Paragraph 7. After a div.</p>
+  <p class="c2">Paragraph 8. After a div.</p>
+
+  <h3>General Sibling Selector (~)</h3>
+  <p>El selector general de hermanos selecciona todos los elementos que son los próximos hermanos de un elemento especificado.</p>
+  <p>El siguiente ejemplo selecciona todos los elementos <p> que son los próximos hermanos de los elementos "div>": </p>
+  <p class="c3">Paragraph 1.</p>
+
+  <div class="c3">
+    <p class="c3">Paragraph 2.</p>
+  </div>
+
+  <p class="c3">Paragraph 3.</p>
+  <code>Some code.</code>
+  <p class="c3">Paragraph 4.</p>
+
+  <h3>Resumen</h3>
+  <img src="./images/resumn_siblings.PNG" alt="resumn">
+</body>
+</html>
